@@ -1,0 +1,22 @@
+/* pages/post/post.wxss */
+.post{
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  background: -webkit-repeating-linear-gradient(#0752aa,skyblue,white);
+  margin: 0;
+}
+.up{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%
+}
+.btn1{
+
+}
+.btn2{
+
+}

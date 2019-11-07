@@ -1,0 +1,30 @@
+/* miniprogram/pages/basicinfo/basicinfo.wxss */
+page{
+  background-color: #fff;
+}
+.part1{
+  padding: 25rpx;
+}
+.content{
+  width: 704rpx;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.txa{
+  border: 1px solid #000;
+  height: 200rpx;
+  width: 680rpx;
+  border-radius: 6rpx;
+  padding: 10rpx;
+  font-size: 32rpx;
+}
+.btn{
+  width: 220rpx;
+  margin-top: 180rpx;
+  background-color: #0752aa;
+  color: #fff;
+  font-size: 32rpx;
+}
+.woman{
+  border-top: 1px solid #eeeeee;
+}

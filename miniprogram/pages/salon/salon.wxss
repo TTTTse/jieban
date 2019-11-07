@@ -1,0 +1,81 @@
+/* miniprogram/pages/salon/salon.wxss */
+
+.list {
+  width: 100%;
+  padding: 10rpx;
+  background-color: #fff;
+  margin-bottom: 20rpx;
+  border-bottom: 1px solid #dfe4e5;
+}
+
+.title {
+  padding: 20rpx;
+  font-weight: 800;
+  font-size: 32rpx;
+}
+
+.zr_container {
+  overflow: hidden;
+  margin: 20rpx;
+
+}
+
+.poster {
+  width: 330rpx;
+  height: 205rpx;
+  float: left;
+}
+.img{
+  width: 30rpx;
+  height: 30rpx;
+  float: left;
+}
+.avatar{
+  border-radius: 50%;
+  overflow: hidden;
+}
+.info {
+  float: left;
+  font-size: 32rpx;
+  margin-left: 40rpx;
+}
+
+.info-info {
+  width: 300rpx;
+  overflow: hidden;
+  font-size: 30rpx;
+  margin-bottom: 16rpx;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+image {
+  width: 100%;
+  height: 100%;
+}
+
+.other {
+  margin: 30rpx 10rpx;
+  font-size: 32rpx;
+  overflow: hidden;
+}
+
+.thumb{
+  /* width: 200rpx; */
+  height: 100%;
+  float: left;
+}
+
+.words {
+  float: left;
+}
+
+.left{
+  margin-left: 20rpx;
+}
+
+.right {
+  float: right;
+  margin-right: 60rpx;
+  opacity: 0.5;
+}

@@ -1,0 +1,7 @@
+.part1, .part2 {
+  color:blue;
+  margin:20rpx;
+}
+.part1-, .part2-{
+  margin-left: 20rpx;
+}
