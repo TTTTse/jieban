@@ -15,7 +15,7 @@
        </block>
        <block wx:else>
       <view class='text' data-index="0" bindtap='clicked'>
-        <text decode="{{true}}">{{activityInfo.activityname}}&nbsp;&nbsp;&nbsp;&nbsp;></text>
+        <text decode="{{true}}">{{activityInfo.name}}&nbsp;&nbsp;&nbsp;&nbsp;></text>
       </view>
       </block>
     </view>
@@ -49,17 +49,32 @@
       </view>
       </block>
     </view>
-     <view class='content' style="color:{{textcolor}}">
+    <view class='content' style="color:{{textcolor}}">
       <view class='name'>
-        <text>活动人数</text>
+        <text>活动地点</text>
       </view>
-      <block wx:if="{{activityInfo.person===''}}">
+      <block wx:if="{{activityInfo.address===''}}">
       <view class='btn' data-index="3" bindtap='clicked'>
         <text>填写</text>
       </view>
       </block>
       <block wx:else>
       <view class='text' data-index="3" bindtap='clicked'>
+        <text decode="{{true}}">{{activityInfo.address}}&nbsp;&nbsp;&nbsp;&nbsp;></text>
+      </view>
+      </block>
+    </view>
+     <view class='content' style="color:{{textcolor}}">
+      <view class='name'>
+        <text>活动人数</text>
+      </view>
+      <block wx:if="{{activityInfo.person===''}}">
+      <view class='btn' data-index="4" bindtap='clicked'>
+        <text>填写</text>
+      </view>
+      </block>
+      <block wx:else>
+      <view class='text' data-index="4" bindtap='clicked'>
         <text decode="{{true}}">{{activityInfo.person}}&nbsp;&nbsp;&nbsp;&nbsp;></text>
       </view>
       </block>

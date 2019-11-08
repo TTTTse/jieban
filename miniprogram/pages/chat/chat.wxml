@@ -1,0 +1,25 @@
+<!--pages/chat/chat.wxml-->
+<view class="chat">
+      <view class="chat-tab {{curIndex==index?'on':''}}" wx:for="{{lists}}" bindtap="part1" data-index="{{index}}" wx:key="{{index}}">
+        <view style='padding:4rpx '>{{item.name}}</view>
+      </view>
+    </view>
+
+  <view class='zr_down'>
+    <block wx:if="{{curContent.length==0}}">
+      <view class='zr_nothing'>
+
+        <block wx:if="{{curIndex==0}}">
+          <view class='zr_text'>
+            <text>无聊天信息</text>
+          </view>
+        </block>
+        <block wx:if="{{curIndex==1}}">
+          <view class='zr_text'>
+            <text>无系统信息</text>
+          </view>
+        </block>
+      </view>
+    </block>
+        </view>
+

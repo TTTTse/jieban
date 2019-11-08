@@ -1,0 +1,28 @@
+/* pages/chat/chat.wxss */
+
+.chat{
+  width:100%;
+  padding: 10rpx 0;
+  display:flex;
+  justify-content:space-around;
+}
+.on{
+  border-bottom: 2px solid #0552ad;
+}
+.zr_down{
+  width: 100%;
+  height: 100%;
+}
+.zr_nothing{
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center
+}
+
+.zr_text{
+  text-align: center;
+  color: #aab0ab;
+  font-size: 32rpx;
+  margin-top: 40rpx;
+}

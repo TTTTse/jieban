@@ -11,7 +11,7 @@ Page({
     showDialog: false
   },
   bindFormSubmit: function (e) {
-    console.log(e.detail.value.textarea)
+    console.log('userInfo发生了submit事件,携带数据为:',e.detail.value.textarea)
     const id = ['phone', 'wx', 'name', 'sex', 'company', 'zhiwei', 'zhiye']
     let index = this.data.index;
     let userInfo = wx.getStorageSync('userInfo')
@@ -56,8 +56,8 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    const name = ['手机号', '微信号', '真实姓名', '性别', '公司', '职位', '职业经历']
-    const id = ['phone', 'wx', 'name', 'sex', 'company', 'zhiwei', 'zhiye']
+    const name = ['手机号', '微信号', '真实姓名', '性别', '专业', '班级']
+    const id = ['phone', 'wx', 'name', 'sex', 'company', 'zhiwei']
     let index = +options.index;
     let title = name[index];
     let userInfo = wx.getStorageSync('userInfo')

@@ -1,20 +1,38 @@
-// pages/post_detail/post_detail.js
+// pages/chat/chat.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    activityInfo:{},
-    titlecolor:"black",
-    textcolor:"purple"
+    lists: [
+      {
+        name: '聊天信息',
+        content: []
+      },
+      {
+        name: '系统信息',
+        content: []
+      },
+    ],
+    curIndex: 0,
+    curContent: [],
 
   },
-  clicked(e){
-    let index = e.currentTarget.dataset.index;
-    wx.navigateTo({
-      url: `/pages/activityInfo/activityInfo?index=${index} `,
+  part1(e) {
+    let that = this
+    wx.showLoading({
+      title: '加载中',
     })
+    setTimeout(function () {
+      let index = e.currentTarget.dataset.index;
+      let curContent = that.data.lists[index].content;
+      that.setData({
+        curIndex: index,
+        curContent
+      })
+      wx.hideLoading();
+    }, 500)
 
   },
 
@@ -22,9 +40,6 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    wx.setNavigationBarTitle({
-      title: '活动信息填写',
-    })
 
   },
 
@@ -39,19 +54,7 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-    let that = this;
-    wx.showLoading({
-      title: '加载中',
-    })
-    setTimeout(function () {
-      let activityInfo = wx.getStorageSync('avtivityInfo')
-      if (activityInfo) {
-        that.setData({
-          activityInfo
-        })
-      }
-      wx.hideLoading()
-    }, 500)
+
   },
 
   /**
