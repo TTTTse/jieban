@@ -1,0 +1,7 @@
+<!--pages/post/post.wxml-->
+<view class="post">
+   <view class="up" >
+      <button class="btn1" bindtap="jumpPage">发布新活动</button>
+      <button class="btn2" bindtap="jumpPage" >修改已发布活动</button>
+    </view>
+</view>

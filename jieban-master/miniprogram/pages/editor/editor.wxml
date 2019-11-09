@@ -1,0 +1,57 @@
+<!--miniprogram/pages/editor/editor.wxml-->
+  <view class='zr_info'>
+    <view class='title' >
+      <text >基本信息</text>
+    </view>
+    <view class='content'>
+    <form bindsubmit="submit">
+      <view class="row">
+        <view class='img'>
+        <image src='/images/phone.png'></image></view>
+        <text>手机号</text>
+        <input type="text" name='phone' placeholder="请输入手机号" value="{{phone}}"></input>
+        </view>
+
+      <view class="row">
+        <view class='img'>
+        <image src='/images/wx.png'></image>
+        </view>
+        <text>微信</text>
+        <input type="text" name='wechaat' placeholder="请输入微信号" value="{{wechat}}"></input>
+      </view>
+
+       <view class="row">
+       <view class='img'>
+        <image src='/images/name.png'></image>
+      </view>
+        <text>姓名</text>
+        <input type="text" name='username' placeholder="请输入姓名" value="{{username}}"></input>
+      </view>
+
+      <view class="row">
+       <view class='img'>
+        <image src='/images/sex.png'></image>
+      </view>
+        <text>性别</text>
+        <input type="text" name='sex' placeholder="请输入性别" value="{{sex}}"></input>
+      </view>
+
+      <view class="row">
+       <view class='img'>
+          <image src='/images/major.png'></image>
+        </view>
+        <text>专业</text>
+        <input type="text" name='major' placeholder="请输入专业名" value="{{major}}"></input>
+      </view>
+
+      <view class="row">
+       <view class='img'>
+          <image src='/images/class.png'></image>
+        </view>
+        <text>班级</text>
+        <input type="text" name='Class' placeholder="请输入班级" value="{{Class}}"></input>
+      </view>
+          <button form-type="submit" type="primary">提交</button>
+    </form>
+    </view>
+</view>

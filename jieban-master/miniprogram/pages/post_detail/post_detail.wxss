@@ -1,0 +1,43 @@
+/* pages/post_detail/post_detail.wxss */
+page{
+  background-color: #f3f8f6;
+}
+.content{
+  background-color: #fff;
+  overflow: hidden;
+  border-bottom: 1px dashed #eee;
+  width: 710rpx;
+  margin: 0 auto;
+  border-radius: 8rpx;
+}
+.title{
+  padding: 30rpx;
+}
+.name{
+  line-height: 120rpx;
+  font-weight: 800;
+  float: left;
+}
+.btn{
+  margin: 30rpx;
+  float: right;
+  padding: 8rpx 40rpx;
+  border: 1px solid #861055;
+  font-size: 30rpx;
+  border-radius: 10rpx;
+  color: #861055;
+}
+.text{
+  float: right;
+  font-size: 30rpx;
+  line-height: 120rpx;
+  margin-right: 50rpx;
+}
+.txa{
+  border: 1px solid #000;
+  height: 200rpx;
+  width: 680rpx;
+  border-radius: 6rpx;
+  padding: 10rpx;
+  font-size: 32rpx;
+}

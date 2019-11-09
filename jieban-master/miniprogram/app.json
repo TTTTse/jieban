@@ -1,0 +1,54 @@
+{
+  "pages": [
+    "pages/login/login",
+    "pages/mine/mine",
+    "pages/editor/editor",
+    "pages/salon/salon",
+    "pages/salon_detail/salon_detail",
+    "pages/post/post",
+    "pages/post_detail/post_detail",
+    "pages/activityInfo/activityInfo",
+    "pages/chat/chat"
+  ],
+  "window": {
+    "enablePullDownRefresh": true,
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#0752aa",
+    "navigationBarTitleText": "校园结伴",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#b7b7b7",
+    "selectedColor": "#000",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/salon/salon",
+        "iconPath": "images/zbf1.png",
+        "selectedIconPath": "images/zbf2.png",
+        "text": "广场"
+      },
+      {
+        "pagePath": "pages/post/post",
+        "iconPath": "images/活动1.jpg",
+        "selectedIconPath": "images/活动2.jpg",
+        "text": "发布"
+      },
+      {
+        "pagePath": "pages/chat/chat",
+        "iconPath": "images/消息1.jpg",
+        "selectedIconPath": "images/消息2.jpg",
+        "text": "消息"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "iconPath": "images/wd1.png",
+        "selectedIconPath": "images/wd2.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}
