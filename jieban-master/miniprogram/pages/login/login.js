@@ -14,7 +14,7 @@ Page({
       wx.login({
         success: function (res) {
           wx.switchTab({
-            url: '/pages/salon/salon'
+            url: '/pages/plaza/plaza'
           })
         }
       })
@@ -30,7 +30,7 @@ Page({
     wx.getUserInfo({
       success: function (res) {
         wx.switchTab({
-          url: '/pages/salon/salon'
+          url: '/pages/plaza/plaza'
         })
       },
       fail(err){

@@ -1,37 +1,14 @@
  <!--miniprogram/pages/mine/mine.wxml-->
 <view class='zr_mine'>
   <view class="zr-up">
-    <view class="zr-touxiang" bindtap='goEditor'>
-      <image src="{{avatarUrl}}" />
+    <view class='touxiang' bindtap='goEditor' >
+      <image src="{{avatarUrl}}"/>
     </view>
-    <view class='zr-userName' bindtap='goEditor'>
-      <block wx:if="{{userInfo.name==''}}">
-      <text>{{nickName}} ></text>
-      </block>
-      <block wx:else>
-      <text>{{userInfo.name}} ></text>
-      </block>
+    <view class='userName' bindtap="goEditor">
+    <text>{{nickName}}</text>
     </view>
-    <block wx:if="{{userInfo.major==''}}">
-      <view class='zr_company'>
-        <view class='zr_i'>
-          <image src='/images/major.png'></image>
-        </view>
-        <view class='zr_t'>
-          <text>{{userInfo.major}}</text>
-        </view>
-      </view>
-    </block>
-     <block wx:if="{{userInfo.class==''}}">
-      <view class='zr_company'>
-        <view class='zr_i'>
-          <image src='/images/class.png'></image>
-        </view>
-        <view class='zr_t'>
-          <text>{{userInfo.class}}</text>
-        </view>
-      </view>
-    </block>
+
+
     <view class="zr-up2">
       <view class="zr-up2-1">
         <button open-type="contact" style='width:100rpx;height:60rpx;background-color:#fff'>

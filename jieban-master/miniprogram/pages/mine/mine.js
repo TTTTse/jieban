@@ -15,20 +15,16 @@ Page({
         content: []
       },
     ],
+    userInfo:{
+    },
     curIndex:0,
     curContent:[],
     showDialog: false,
-    userInfo:{}
   },
   goEditor(){
     wx.navigateTo({
       url: '/pages/editor/editor',
     })
-  },
-    jumpset:function() {
-      wx.navigateTo({
-        url: '../set/set',
-      })
   },
   part1(e){
     let that = this
@@ -52,11 +48,6 @@ Page({
       showDialog: false
     })
   },
-  tosalonDetail: function (e) {
-    wx.navigateTo({
-      url: `/pages/salon_detail/salon_detail?id=${e.currentTarget.dataset.id}`,
-    })
-  },
   isClicked: function () {
     let sponsors = wx.getStorageSync('sponsors')
     let index = wx.getStorageSync('index');
@@ -76,12 +67,6 @@ Page({
     })
     this.toggleDialog();
   },
-  go_sponsorDetail(e) {
-    let name = e.currentTarget.dataset.name
-    wx.navigateTo({
-      url: `/pages/sponsor_detail/sponsorDetail?name=${name}`,
-    })
-  },
   follow: function (e) {
     let index = e.currentTarget.dataset.index;
     let sponsors = wx.getStorageSync('sponsors')
@@ -98,18 +83,21 @@ Page({
    */
   onLoad: function (options) {
     let that = this;
+    /**
+     * 获取用户信息
+     */
     wx.getUserInfo({
-      success: function (res) {
+      success:function(res){
         that.setData({
-          nickName: res.userInfo.nickName,
-          avatarUrl: res.userInfo.avatarUrl,
+          avatarUrl:res.userInfo.avatarUrl,
+          nickName:res.userInfo.nickName,
         })
         wx.setNavigationBarTitle({
-          title: that.data.nickName
+          title: that.data.nickName,
         })
-      },
+      }
     })
-  },
+    },
   getFollowed(sponsors){
     let content = [];
     for(let i = 0; i<sponsors.length;i++){
@@ -217,3 +205,6 @@ Page({
 
   }
 })
+  /**< block wx: if= "{{name===''}}" >        <block wx:else>
+      <text>{{name}} ></text>
+      </block>*/

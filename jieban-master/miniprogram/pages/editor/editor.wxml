@@ -17,7 +17,7 @@
         <image src='/images/wx.png'></image>
         </view>
         <text>微信</text>
-        <input type="text" name='wechaat' placeholder="请输入微信号" value="{{wechat}}"></input>
+        <input type="text" name='wechat' placeholder="请输入微信号" value="{{wechat}}"></input>
       </view>
 
        <view class="row">

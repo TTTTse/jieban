@@ -5,8 +5,12 @@ Page({
    * 页面的初始数据
    */
   data: {
-    result_list:[],
-    item:[]
+    username:'',
+    phone:'',
+    wechat:'',
+    sex:'',
+    Class:'',
+    major:'',
   },
   /**formSubmit:function(e){
     var obj = this;
@@ -14,7 +18,7 @@ Page({
     wx.request({
       url: '',
       header:{
-
+        'content-type': 'application/jason'
       },
       method:"POST",
       data:{
@@ -26,6 +30,15 @@ Page({
         Class = post.Class,
       },
       success:function(res){
+        console.log(res.data);
+        wx.navigateBack({
+          delta: 1
+        })
+        wx.showToast({
+          title: '设置成功!',
+          icon: 'success',
+          duration: 2000
+        })
       },
       fail:function(){
         console.log('提交失败');

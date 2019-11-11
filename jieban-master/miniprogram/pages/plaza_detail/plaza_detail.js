@@ -1,27 +1,18 @@
-// pages/post_detail/post_detail.js
+// pages/plaza_detail/plaza_detail.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    time:''
+
   },
-  changeDate: function (e){
-      this.setData({
-        time:e.detail.value
-      });
-    },
-
-
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    wx.setNavigationBarTitle({
-      title: '活动信息填写',
-    })
+
   },
 
   /**
@@ -35,19 +26,7 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-    let that = this;
-    wx.showLoading({
-      title: '加载中',
-    })
-    setTimeout(function () {
-      let activityInfo = wx.getStorageSync('avtivityInfo')
-      if (activityInfo) {
-        that.setData({
-          activityInfo
-        })
-      }
-      wx.hideLoading()
-    }, 500)
+
   },
 
   /**

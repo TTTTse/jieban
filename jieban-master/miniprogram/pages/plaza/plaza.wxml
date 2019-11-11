@@ -1,0 +1,9 @@
+<view class="content">
+   <block wx:for="{{activitylist}}" >
+      <view class="artImg">
+         <image src="{{avatarUrl}}" />
+      </view>
+      <view class="title">{{activityname}}</view>
+      <view class="date">{{date}}</view>
+   </block>
+</view>
